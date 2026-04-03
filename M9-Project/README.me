@@ -1,0 +1,44 @@
+# 🍳 Smart Pantry & Recipe Finder
+
+A full-stack backend application designed to reduce food waste by tracking inventory and suggesting recipes based on real-time data.
+
+## 🚀 Live Links
+- **Web Interface:** [INSERT YOUR STREAMLIT CLOUD LINK HERE]
+- **API Documentation (Swagger):** [INSERT YOUR RENDER BACKEND LINK HERE]/docs
+
+---
+
+## 📋 Project Requirements Checklist
+- [x] **Fully functioning backend:** Built with FastAPI (Python).
+- [x] **Real-world use case:** Smart food management and waste reduction.
+- [x] **API Layer:** RESTful API with endpoints for inventory and recipes.
+- [x] **Application Logic:** Logic to filter expired vs. fresh items and match ingredients.
+- [x] **Database:** SQLite with SQLAlchemy ORM for persistent storage.
+- [x] **External API:** Integrated with the **Spoonacular API** for real-time recipe data.
+- [x] **Cloud Deployment:** Backend hosted on **Render**, Frontend on **Streamlit Cloud**.
+- [x] **Connected Client:** Interactive web interface built with **Streamlit**.
+
+---
+
+## 🛠️ Tech Stack
+- **Backend:** FastAPI (Python)
+- **Database:** SQLite (SQLAlchemy)
+- **Frontend:** Streamlit
+- **External Integration:** Spoonacular API
+- **Deployment:** Render (Backend) & Streamlit Cloud (Frontend)
+
+---
+
+## 📂 Project Structure
+```text
+smart-pantry/
+├── backend/            # FastAPI Server
+│   ├── app/
+│   │   ├── main.py     # API Routes & Core Logic
+│   │   ├── db/         # Database Connection & Models
+│   │   ├── schemas/    # Data Validation (Pydantic)
+│   │   └── services/   # External API (Spoonacular) Integration
+├── client/             # Streamlit Web App
+│   ├── app.py          # UI Layout
+│   └── api_client.py   # Connection to the Backend
+└── .gitignore          # Security: Hides API keys and DB files

@@ -1,0 +1,12 @@
+# Ignore Environment Variables (API Keys)
+.env
+
+# Ignore Python Cache
+__pycache__/
+*.pyc
+
+# Ignore running file
+run.txt
+
+# Ignore the local database file (the cloud will create a fresh one)
+pantry.db
